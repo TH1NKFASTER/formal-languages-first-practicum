@@ -1,11 +1,11 @@
 #include <iostream>
-#include "my_set.h"
-int main() {
-  my_set a(6);
-  a.insert(3);
-  auto res = a.set_kleene_star();
-  for (size_t x : res){
-    std::cout << x << " ";
-  }
+#include "RegularExpression.h"
 
+int main() {
+  std::string s;
+  char letter;
+  size_t modulo;
+  std::cin >> s >> letter >> modulo;
+  RegularExpression regex(s);
+  std::cout << (regex.ContainsWordWithDivisibleNumberOfGivenLetter(letter, modulo) ? "YES" : "NO");
 }
