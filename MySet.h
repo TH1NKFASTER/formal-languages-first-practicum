@@ -9,15 +9,15 @@ public:
 
     friend MySet SetUnion(const MySet &a, const MySet &b);
 
-    MySet SetKleeneStar() const;
+    [[nodiscard]] MySet SetKleeneStar() const;
 
-    std::set<size_t>::iterator begin() const;
+    [[nodiscard]] std::set<size_t>::iterator begin() const;
 
-    std::set<size_t>::iterator end() const;
+    [[nodiscard]] std::set<size_t>::iterator end() const;
 
     void Insert(size_t t);
 
-    bool Contains(size_t x) const;
+    [[nodiscard]] bool Contains(size_t x) const;
 
 private:
     std::set<size_t> modulo_set_;

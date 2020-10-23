@@ -6,6 +6,10 @@ int main() {
   char letter;
   size_t modulo;
   std::cin >> s >> letter >> modulo;
-  RegularExpression regex(s);
-  std::cout << (regex.ContainsWordWithDivisibleNumberOfGivenLetter(letter, modulo) ? "YES" : "NO");
+  try {
+    RegularExpression regex(s);
+    std::cout << (regex.ContainsWordWithDivisibleNumberOfGivenLetter(letter, modulo) ? "YES" : "NO");
+  } catch (std::exception &exception) {
+    std::cout << exception.what();
+  }
 }

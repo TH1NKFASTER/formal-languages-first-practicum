@@ -2,9 +2,9 @@
 
 class RegularExpression {
 public:
-    explicit RegularExpression(const std::string &s);
+    explicit RegularExpression(std::string s);
 
-    bool ContainsWordWithDivisibleNumberOfGivenLetter(char given_char, size_t modulo) const;
+    [[nodiscard]] bool ContainsWordWithDivisibleNumberOfGivenLetter(char given_char, size_t modulo) const;
 
 private:
     std::string reg_ex_;

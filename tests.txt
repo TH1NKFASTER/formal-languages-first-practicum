@@ -4,5 +4,6 @@ a c 2 YES
 aa. a 2 YES
 aa. b 2 YES
 aa. c 2 YES
-ab+c.aba.∗.bac.+.+∗ a 2 YES
-aba.∗.a.∗ab1+.. a 2 NO
+aa.*a. a 2 NO
+ab+c.aba.*.bac.+.+* a 2 YES
+aba.*.a.*ab1+.. a 2 YES (в ответах NO, но это нелогично)
