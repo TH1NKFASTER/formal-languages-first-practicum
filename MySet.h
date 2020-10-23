@@ -16,6 +16,8 @@ public:
 
     void Insert(size_t t);
 
+    bool Contains(size_t x) const;
+
 private:
     std::set<size_t> modulo_set_;
     size_t modulo_;

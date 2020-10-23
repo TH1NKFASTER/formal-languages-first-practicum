@@ -4,7 +4,7 @@ class RegularExpression {
 public:
   explicit RegularExpression(const std::string& s);
 
-  bool ContainsWordWithDivisibleNumberOfGivenLetter(char c, size_t modulo);
+  bool ContainsWordWithDivisibleNumberOfGivenLetter(char given_char, size_t modulo) const;
 
 private:
     std::string reg_ex_;
