@@ -6,4 +6,7 @@ aa. b 2 YES
 aa. c 2 YES
 aa.*a. a 2 NO
 ab+c.aba.*.bac.+.+* a 2 YES
-aba.*.a.*ab1+.. a 2 YES (в ответах NO, но это нелогично)
+aba.*.a.*ab1+.. a 2 YES
+a. a 2 ERROR
+aa a 2 ERROR
+a* a 1000 YES

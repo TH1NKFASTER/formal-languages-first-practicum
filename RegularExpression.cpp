@@ -1,7 +1,6 @@
 #include "RegularExpression.h"
 #include "MySet.h"
 #include <stack>
-#include <utility>
 
 RegularExpression::RegularExpression(std::string s) : reg_ex_(std::move(s)) {
 
