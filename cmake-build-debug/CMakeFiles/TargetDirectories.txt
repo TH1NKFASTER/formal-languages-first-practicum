@@ -1,0 +1,9 @@
+/Users/maksimdolgov/CLionProjects/formal_languages_practicum/cmake-build-debug/CMakeFiles/install/strip.dir
+/Users/maksimdolgov/CLionProjects/formal_languages_practicum/cmake-build-debug/CMakeFiles/install.dir
+/Users/maksimdolgov/CLionProjects/formal_languages_practicum/cmake-build-debug/CMakeFiles/list_install_components.dir
+/Users/maksimdolgov/CLionProjects/formal_languages_practicum/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/maksimdolgov/CLionProjects/formal_languages_practicum/cmake-build-debug/CMakeFiles/formal_languages_practicum.dir
+/Users/maksimdolgov/CLionProjects/formal_languages_practicum/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/maksimdolgov/CLionProjects/formal_languages_practicum/cmake-build-debug/CMakeFiles/install/local.dir
+/Users/maksimdolgov/CLionProjects/formal_languages_practicum/cmake-build-debug/CMakeFiles/test.dir
+/Users/maksimdolgov/CLionProjects/formal_languages_practicum/cmake-build-debug/CMakeFiles/Test.dir
