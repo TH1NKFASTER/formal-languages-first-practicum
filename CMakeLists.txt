@@ -7,13 +7,12 @@ SET(CMAKE_INSTALL_RPATH "${PROJECT_SOURCE_DIR}/bin")
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
-add_executable(formal_languages_practicum main.cpp RegularExpression.cpp)
+add_executable(formal_languages_practicum main.cpp RegularExpression.cpp MySet.cpp)
 enable_testing()
-add_executable(Test tests.cpp RegularExpression.cpp)
+add_executable(Test tests.cpp RegularExpression.cpp MySet.cpp)
 
 target_link_libraries(Test Threads::Threads ${GTEST_LIBRARIES} ${GMOCK_BOTH_LIBRARIES})
 set(CMAKE_EXE_LINKER_FLAGS --coverage)
-add_definitions(-fprofile-arcs -ftest-coverage)
 target_link_libraries(Test -fprofile-arcs)
 install (
         TARGETS Test
