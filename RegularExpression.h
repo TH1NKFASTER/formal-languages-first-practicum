@@ -1,4 +1,5 @@
 #include <string>
+#include <exception>
 
 class RegularExpression {
 public:
@@ -8,6 +9,8 @@ public:
 
 private:
     std::string reg_ex_;
+
+    class ERROR;
 };
 
 

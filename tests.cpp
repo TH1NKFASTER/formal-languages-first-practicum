@@ -79,7 +79,7 @@ TEST(ELEVENTH, ERROR) {
 TEST(TWELFTH, CORRECT) {
   std::string regex = "a*";
   RegularExpression expression(regex);
-  bool answer = expression.ContainsWordWithDivisibleNumberOfGivenLetter('a', 1000);
+  bool answer = expression.ContainsWordWithDivisibleNumberOfGivenLetter('a', 3000);
   EXPECT_EQ(answer, true);
 }
 
