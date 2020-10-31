@@ -55,6 +55,3 @@ void MySet::Insert(size_t t) {
 bool MySet::Contains(size_t x) const {
   return modulo_set_.count(x);
 }
-
-
-
