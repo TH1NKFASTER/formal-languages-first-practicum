@@ -10,6 +10,6 @@ int main() {
     RegularExpression regex(s);
     std::cout << (regex.ContainsWordWithDivisibleNumberOfGivenLetter(letter, modulo) ? "YES" : "NO");
   } catch (std::exception &exception) {
-    std::cout << exception.what();
+    std::cout << "ERROR";
   }
 }

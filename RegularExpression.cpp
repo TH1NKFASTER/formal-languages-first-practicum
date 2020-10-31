@@ -15,7 +15,7 @@ bool RegularExpression::ContainsWordWithDivisibleNumberOfGivenLetter(char given_
       stack.push(new_top);
     } else if (c == '.') {
       if (stack.size() < 2) {
-        throw runtime_error("ERROR");
+        throw "ERROR";
       }
       MySet first_operand = stack.top();
       stack.pop();
@@ -24,7 +24,7 @@ bool RegularExpression::ContainsWordWithDivisibleNumberOfGivenLetter(char given_
       stack.push(SetConcatenate(first_operand, second_operand));
     } else if (c == '+') {
       if (stack.size() < 2) {
-        throw runtime_error("ERROR");
+        throw "ERROR";
       }
       MySet first_operand = stack.top();
       stack.pop();
@@ -33,7 +33,7 @@ bool RegularExpression::ContainsWordWithDivisibleNumberOfGivenLetter(char given_
       stack.push(SetUnion(first_operand, second_operand));
     } else if (c == '*') {
       if (stack.empty()) {
-        throw runtime_error("ERROR");
+        throw "ERROR";
       }
       MySet operand = stack.top();
       stack.pop();
@@ -45,7 +45,7 @@ bool RegularExpression::ContainsWordWithDivisibleNumberOfGivenLetter(char given_
     }
   }
   if (stack.size() != 1) {
-    throw runtime_error("ERROR");
+    throw "ERROR";
   }
   return stack.top().Contains(0);
 }
